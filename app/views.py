@@ -45,14 +45,13 @@ def prepare_image(path):
     img_array_expanded_dims = np.expand_dims(img_array, axis=0)
     return tf.keras.applications.mobilenet.preprocess_input(img_array_expanded_dims)
 
-def gender():
-
+def photo():
     if 'image' not in request.files:
-        return render_template('gender.html', fileupload=False, prediction='')
+        return render_template('photo.html', fileupload=False, prediction='')
 
     file = request.files['image']
     if file.filename =='':
-        return render_template('gender.html', fileupload=False, prediction='No posted image. Please upload an image.')
+        return render_template('photo.html', fileupload=False, prediction='No posted image. Please upload an image.')
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
@@ -68,6 +67,6 @@ def gender():
         for item in results[0][:3]:
             items.append({item[1]: round(float(item[2]),4)})
 
-        return render_template('gender.html', fileupload=True, img_name=filename, w=w, prediction='The image is most likely {}'.format(items))
+        return render_template('photo.html', fileupload=True, img_name=filename, w=w, prediction='The image is most likely {}'.format(items))
     else:
-        return render_template('gender.html', fileupload=False, prediction='Invalid File extension. Please upload an image with extension png, jpg, jpeg or gif')
+        return render_template('photo.html', fileupload=False, prediction='Invalid File extension. Please upload an image with extension png, jpg, jpeg or gif')

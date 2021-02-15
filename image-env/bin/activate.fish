@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/langwang/Documents/CS/PROJECT/Image_Prediction_Webapp_try/image-env"
+set -gx VIRTUAL_ENV "/Users/langwang/Documents/CS/PROJECT/Image_Prediction_Webapp/image-env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
