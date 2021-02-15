@@ -66,7 +66,6 @@ def photo():
         items = []
         for item in results[0][:3]:
             items.append({item[1]: round(float(item[2]),4)})
-
-        return render_template('photo.html', fileupload=True, img_name=filename, w=w, prediction='The image is most likely {}'.format(items))
+        return render_template('photo.html', fileupload=True, img_name=filename, w=w, prediction=items)
     else:
         return render_template('photo.html', fileupload=False, prediction='Invalid File extension. Please upload an image with extension png, jpg, jpeg or gif')
