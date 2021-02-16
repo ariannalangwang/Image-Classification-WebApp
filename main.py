@@ -10,4 +10,4 @@ app.add_url_rule('/faceapp', 'faceapp', views.faceapp)
 app.add_url_rule('/faceapp/photo', 'photo', views.photo, methods=['GET','POST'])
 #
 if __name__ == "__main__":
-    app.run(debug=False, host='127.0.0.1', port=5004)
+    app.run(debug=False, host='127.0.0.1', port=5010)

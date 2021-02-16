@@ -10,11 +10,8 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
 from tensorflow.keras.applications import imagenet_utils
 from sklearn.metrics import confusion_matrix
-import itertools
 import os
-import shutil
-import random
-from PIL import Image, ImageFile
+from PIL import Image
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = 'static/uploads'
@@ -55,7 +52,7 @@ def photo():
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
-        print("***"+filename)
+        # print("***"+filename)
         path = os.path.join(UPLOAD_FOLDER, filename) # get the file path
         file.save(path)  # save the file to the specified upload folder
         w = getwidth(path)
