@@ -2,7 +2,7 @@
 
 Since I had to install and use TensorFlow in my app, it is too large to host on Heroku's free-tier account. Therefore, I made this demo video to show how my app works and hosted it on YouTube for free :).  If you're curious, then click on the link below to see my demo video.
 
-https://www.youtube.com/watch?v=c4w_qS3OKag&feature=youtu.be
+https://www.youtube.com/watch?v=c4w_qS3OKag
 
 
 #### There are two major components for building this web app:  
