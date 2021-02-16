@@ -2,7 +2,7 @@
 
 Since I had to install TensorFlow to make the deep convolutional neural networks function, my app is too large to host on Heroku's free account. Therefore, I made this demo video to show how my app works and hosted it on YouTube for free :).  If you're curious, then click on the link below to see my demo video.
 
-https://youtu.be/GZ1bEbjywvw
+https://youtu.be/b13E4S-dVTM
 
 
 #### There are two major components for building this web app:  
