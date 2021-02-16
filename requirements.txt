@@ -22,7 +22,6 @@ google-auth==1.26.1
 google-auth-oauthlib==0.4.2
 google-pasta==0.2.0
 grpcio==1.32.0
-gunicorn
 h5py==2.10.0
 idna==2.10
 ipykernel==5.4.3
@@ -86,7 +85,6 @@ scipy
 Send2Trash==1.5.0
 six==1.15.0
 sklearn
-wheel
 tensorboard==2.4.1
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.4.1
