@@ -1,6 +1,6 @@
 ### Welcome to my Image Classification App
 
-Since I have to install TensorFlow to make the deep convolutional neural networks function, my app is too large to host on Heroku's free account. Since I don't want to spend money to host a website, I made this demo video to show how my app works :).  If you're curious, then click on the link below to see my demo video.
+Since I had to install TensorFlow to make the deep convolutional neural networks function, my app is too large to host on Heroku's free account. Therefore, I made this demo video to show how my app works and hosted it on YouTube for free :).  If you're curious, then click on the link below to see my demo video.
 
 https://youtu.be/GZ1bEbjywvw
 
